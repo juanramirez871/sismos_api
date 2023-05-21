@@ -1,5 +1,85 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "monospace";
+    font-family: monospace;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+.title{
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+}
+
+.home{
+    margin: 50px;
+}
+
+.content_cards{
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content_cards div{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+p{
+    padding: 5px 0 5px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.windows_promp{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    background-color: rgb(30, 28, 28);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+}
+
+img{
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    width: 80px;
+    cursor: pointer;
 }

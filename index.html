@@ -12,34 +12,36 @@
         <section class="home">
             <div class="title">
                 <div style="text-align: center;">
-                    <h1>Enterate de los ultimos sismos 🤯</h1>
+                    <h1 data-temblor="true" >Enterate de los ultimos sismos 🤯</h1>
+                    <p data-temblor="true" >(Cuidado con los temblores)</p>
                 </div>
             </div>
 
-            <div class="content_cards">
-                <div>
-                    <h2 style="padding-bottom: 10px;">M 0.9 - 10km WNW of The Geysers, CA</h2>
-                    <p><b>Fecha:</b> 2023-05-21T20:21:00</p>
-                    <p><b>Continente:</b> North America</p>
-                    <p><b>Pais:</b> United States of America (the)</p>
-                    <button id="detalles">Ver detalles...</button>
+            <div class="content_cards" data-temblor="true" >
+                <div id="sismos_true" class="show_red" >
+                    <h2 id="sismos_true" style="padding-bottom: 10px;" data-show-number="0"  data-temblor="true" >M 0.9 - 10km WNW of The Geysers, CA</h2>
+                    <p id="sismos_true" data-temblor="true" data-show-number="0" ><b data-temblor="true" data-show-number="0">Fecha:</b> 2023-05-21T20:21:00</p>
+                    <p id="sismos_true" data-temblor="true" data-show-number="0" ><b data-temblor="true" data-show-number="0">Continente:</b> North America</p>
+                    <p id="sismos_true" data-temblor="true" data-show-number="0" ><b data-temblor="true" data-show-number="0">Pais:</b> United States of America (the)</p>
+                    <button id="sismos_true" data-temblor="true" data-show-number="0" class="detalles">Ver detalles...</button>
                 </div>
 
-                <div>
-                    <h2 style="padding-bottom: 10px;">M 0.9 - 10km WNW of The Geysers, CA</h2>
-                    <p><b>Fecha:</b> 2023-05-21T20:21:00</p>
-                    <p><b>Continente:</b> North America</p>
-                    <p><b>Pais:</b> United States of America (the)</p>
-                    <button id="detalles">Ver detalles...</button>
+                <div id="sismos_true" class="show_red" >
+                    <h2 id="sismos_true" style="padding-bottom: 10px;" data-temblor="true" data-show-number="1" data-show-number="1" >M 0.9 - 10km WNW of The Geysers, CA</h2>
+                    <p id="sismos_true" data-temblor="true" data-show-number="1" ><b>Fecha:</b> 2023-05-21T20:21:00</p>
+                    <p id="sismos_true" data-temblor="true" data-show-number="1" ><b>Continente:</b> North America</p>
+                    <p id="sismos_true" data-temblor="true" data-show-number="1" ><b>Pais:</b> United States of America (the)</p>
+                    <button id="sismos_true" data-temblor="true" data-show-number="1" class="detalles">Ver detalles...</button>
                 </div>
 
-                <div>
-                    <h2 style="padding-bottom: 10px;">M 0.9 - 10km WNW of The Geysers, CA</h2>
-                    <p><b>Fecha:</b> 2023-05-21T20:21:00</p>
-                    <p><b>Continente:</b> North America</p>
-                    <p><b>Pais:</b> United States of America (the)</p>
-                    <button id="detalles">Ver detalles...</button>
+                <div id="sismos_true" class="show_red" >
+                    <h2 id="sismos_true" style="padding-bottom: 10px;" data-temblor="true" data-show-number="2" data-show-number="2" >M 0.9 - 10km WNW of The Geysers, CA</h2>
+                    <p id="sismos_true" data-temblor="true" data-show-number="2" ><b>Fecha:</b> 2023-05-21T20:21:00</p>
+                    <p id="sismos_true" data-temblor="true" data-show-number="2" ><b>Continente:</b> North America</p>
+                    <p id="sismos_true" data-temblor="true" data-show-number="2" ><b>Pais:</b> United States of America (the)</p>
+                    <button id="sismos_true" data-temblor="true" data-show-number="2" class="detalles">Ver detalles...</button>
                 </div>
+
             </div>
             
         </section>
@@ -71,6 +73,6 @@
 
     </div>
 
-    <script src="./js/ventana_emergente.js"></script>
+    <script src="./js/animaciones.js"></script>
 </body>
 </html>

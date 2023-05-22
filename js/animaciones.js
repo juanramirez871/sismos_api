@@ -3,7 +3,6 @@ $capa = document.querySelector("#capa");
 
 document.addEventListener("click", (e) => {
 
-    console.log(e.target.className)
     if(e.target.className[0] == "d"){
 
         $capa.style.width = "100%";
@@ -29,10 +28,10 @@ document.addEventListener("click", (e) => {
 
 let animation_shadow;
 let animation_temblor = document.querySelectorAll("[data-temblor]");
-let animation_shadow_all = document.querySelectorAll(".show_red");
 
 document.addEventListener("mouseover", e => {
 
+    let animation_shadow_all = document.querySelectorAll(".show_red");
     if(e.target.id == "sismos_true"){
 
         try{
@@ -63,8 +62,3 @@ document.addEventListener("mouseover", e => {
         }
     }
 })
-
-// document.addEventListener("mouseout", e => {  temblor
-
-//     console.log(e.target)
-// })

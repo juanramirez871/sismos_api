@@ -58,6 +58,13 @@ button{
     cursor: pointer;
 }
 
+.content_data_dina{
+    display: flex;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
     padding: 5px 0 5px 0;
 }
@@ -80,8 +87,8 @@ background: #555;
 }
 
 .windows_promp{
-    width: 50%;
-    height: 50%;
+    width: 85%;
+    height: 85%;
     position: fixed;
     background-color: rgb(30, 28, 28);
     top: 0;
@@ -97,7 +104,21 @@ background: #555;
     transition: all .4s;
 }
 
-img{
+.logo{
+    width: 100px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+header{
+    display: flex;
+    background-color: #d8d5d5;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#exit{
     position: absolute;
     right: -30px;
     top: -30px;
@@ -130,4 +151,56 @@ img{
     margin-bottom: 10px;
     padding: 15px !important;
     background-color: rgba(253, 249, 249, 0.5) !important;
+}
+
+iframe{
+    width: 130%;
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+input{
+    width: 250px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.search{
+    width: 30px;
+    background-color: #aeacac;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+@media (max-width: 800px) {
+    .content_cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+ 
+header {
+    display: flex;
+    background-color: #d8d5d5;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+}
+
+@media (max-width: 1040px){   
+iframe {
+    width: 60%;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
 }

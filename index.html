@@ -8,11 +8,20 @@
     <title>Sismos API</title>
 </head>
 <body>
+    <header>
+        <img class="logo" src="https://images.vexels.com/media/users/3/157970/isolated/preview/c156b4270aea292b9b335dd463ea17eb-icono-de-planeta-tierra-icono-de-tierra.png" alt="">
+        <h1 style="margin-left: 50px;" >EarthQuake API</h1>
+    </header>
     <div>
         <section class="home">
             <div class="title">
                 <div style="text-align: center;">
                     <h1 data-temblor="true" >Enterate de los ultimos sismos 🤯</h1>
+                    <h4 data-temblor="true" style="margin-top: 10px;" >Rango de los ultimos sismos que quieres ver (1- 100)</h4>
+                    <div style="display: flex;align-items: center;justify-content: center;" >
+                        <input type="number" min="0" max="100" placeholder="Numero aqui..." data-temblor="true" id="rango" />
+                    <img class="search" src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-15.png" id="search"  data-temblor="true" alt="">
+                    </div>
                     <p data-temblor="true" >(¡Cuidado con los temblores!)</p>
                 </div>
             </div>
@@ -66,7 +75,7 @@
         </div>
 
         <div class="capa" id="capa"></div>
-
+       
     </div>
 
     <script src="./js/animaciones.js"></script>
